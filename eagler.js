@@ -26,55 +26,84 @@ html,body{
 <!DOCTYPE html>
 <html style="width:100%;height:100%;background-color:black;">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-  <meta name="description" content="EaglercraftX 1.8 test directory HTML page" />
-  <meta name="keywords" content="eaglercraft, eaglercraftx, minecraft, 1.8, 1.8.8" />
-  <title>EaglyMC 1.20</title>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  <meta property="og:locale" content="en-US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="EaglyMC 1.20" />
-  <meta property="og:description" content="test directory HTML page" />
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-');
+    </script>
+<meta charset="UTF-8">
+<meta http-equiv="origin-trial" content="ArNPSFm7gVG988ErBulTuZ21VM9sMvN4G90SgXXCOOzf2rbY0PLmI/DYkgEiEZZxC3zIqUIf3NInHkZoSvutyAIAAAB7eyJvcmlnaW4iOiJodHRwczovL2VhZ2xlcmNyYWZ0LmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViQXNzZW1ibHlKU1Byb21pc2VJbnRlZ3JhdGlvbiIsImV4cGlyeSI6MTc0NDY3NTIwMCwiaXNTdWJkb21haW4iOnRydWV9">
+<meta http-equiv="origin-trial" content="A6nEkkcO9G/wqamPSME1dPmkGL/GvlLLPuW8lI1WBBHX/LCCvJdNYA/nicSPw/9kLEqq9QVv4g0SQL/xdbU8p2oAAAB7eyJvcmlnaW4iOiJodHRwczovL2VhZ2xlcmNyYWZ0LmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViQXNzZW1ibHlKU1Byb21pc2VJbnRlZ3JhdGlvbiIsImV4cGlyeSI6MTczODEzNTMwNCwiaXNTdWJkb21haW4iOnRydWV9">
 
-  <link type="image/png" rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/elite-gamez/eagly@main/favicon.png" />
-
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/elite-gamez/eagly@main/classess.js"></script>
-
-  <script type="text/javascript">
-    "use strict";
-    window.addEventListener("load", function () {
-      var relayId = Math.floor(Math.random() * 3);
-      window.eaglercraftXOpts = {
-        demoMode: false,
-        container: "game_frame",
-        assetsURI: "https://cdn.jsdelivr.net/gh/elite-gamez/eagly@main/assets.epk",
-        localesURI: "https://cdn.jsdelivr.net/gh/elite-gamez/eagly@main/lang/",
-        worldsDB: "worlds",
-        logInvalidCerts: true,
-        crashOnUncaughtExceptions: true,
-        servers: [
-          { addr: "ws://localhost:8081/", name: "Local test server" }
-        ],
-        relays: [
-          { addr: "wss://relay.deev.is/", comment: "lax1dude relay #1", primary: relayId === 0 },
-          { addr: "wss://relay.lax1dude.net/", comment: "lax1dude relay #2", primary: relayId === 1 },
-          { addr: "wss://relay.shhnowisnottheti.me/", comment: "ayunami relay #1", primary: relayId === 2 }
-        ]
-      };
-
-      var q = window.location.search;
-      if ((typeof q === "string") && q[0] === "?" && (typeof window.URLSearchParams !== "undefined")) {
-        q = new window.URLSearchParams(q);
-        var s = q.get("server");
-        if (s) window.eaglercraftXOpts.joinServer = s;
-      }
-
-      main();
-    });
-  </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<title>Minecraft 1.12.2</title>
+<script type="text/javascript">
+window.addEventListener("load", function() {
+	if((typeof WebAssembly !== "undefined") && (typeof WebAssembly.Suspending !== "undefined")) {
+		try {
+			if("true" === window.localStorage.getItem("hideEaglerWASMAvailable")) {
+				return;
+			}
+		}catch(ex) {
+		}
+		var el = document.getElementById("eaglerWASMAvailable");
+		var chkbox = document.getElementById("eaglerWASMAvailableDontShow");
+		function handleDontShow() {
+			if(chkbox.checked) {
+				try {
+					window.localStorage.setItem("hideEaglerWASMAvailable", "true");
+				}catch(ex) {
+				}
+			}
+		}
+		el.style.display = "block";
+		document.getElementById("eaglerWASMAvailableYes").addEventListener("click", function() {
+			handleDontShow();
+			document.location.href = "https://eaglercraft.com/mc/1.12.2-wasm/";
+		});
+		document.getElementById("eaglerWASMAvailableNo").addEventListener("click", function() {
+			handleDontShow();
+			el.style.display = "none";
+		});
+	}
+});
+</script>
+<script type="text/javascript">
+window.disableUserscripts = true;
+window.__eaglercraftLoaderClient = {
+	container: "game_frame",
+	name: "Eaglercraft 1.12",
+	file: "net.peytonplayz585.eaglercraft.v1_12.client",
+	cid: "bafybeidrnchyech7b26rqhm3tayt7p6mxvl23lzd4f5mcyqda7hbrzyal4",
+	path: "",
+	download: "https://cdn.jsdelivr.net/gh/genizy/mc@main/data/1.12.2.gz",
+	dlSize: 15601341,
+	gzip: true
+};
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/genizy/mc@main/shared/loader.js"></script>
+<link type="image/png" rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/genizy/mc@main/shared/game.png" />
 </head>
-<body style="margin:0px;width:100%;height:100%;overflow:hidden;background-color:black;" id="game_frame">
+<body style="margin:0px;width:100%;height:100%;overflow:hidden;background-color:white;">
+<div id="eaglerWASMAvailable" style="display:none;position:absolute;left:0px;top:0px;right:0px;z-index:1000;">
+<div style="margin:auto;max-width:650px;">
+<div style="margin:20px;border:5px double black;padding:10px;background-color:white;text-align:center;font-family:sans-serif;font-size:1.2em;">
+<h3>Eaglercraft WebAssembly GC is supported on your browser, would you like to try it?</h3>
+<p>The new variant of Eaglercraft gets almost <b>2x the FPS</b>, however it may crash if your device doesn't have a lot of memory</p>
+<p>Your existing singleplayer worlds will be available</p>
+<h4><input type="checkbox" style="zoom:1.5;" id="eaglerWASMAvailableDontShow"> Do not show again</h4>
+<p><button id="eaglerWASMAvailableYes" style="zoom:1.5;">Switch to WebAssembly version</button></p>
+<p><button id="eaglerWASMAvailableNo" style="zoom:1.5;">Keep using JavaScript version</button></p>
+</div>
+</div>
+</div>
+<div id="game_frame" style="width:100%;height:100%;"></div>
 </body>
 </html>
 </body>
